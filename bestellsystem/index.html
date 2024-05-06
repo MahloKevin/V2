@@ -14,25 +14,23 @@
 
     <title> Mahlo Kantine </title>
 
-    <!-- bootstrap core css -->
+    <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
 
-    <!-- Custom styles for this template -->
+    <!-- Eigene CSS Designs -->
     <link href="css/style.css" rel="stylesheet"/>
-    <!-- responsive style -->
+    <!-- CSS für Responsive Design -->
     <link href="css/responsive.css" rel="stylesheet"/>
 
 </head>
 <body>
-
 <div class="hero_area">
     <div class="bg-box">
-        <img draggable="false" src="images/hero-bg.jpg" alt="">
+        <img draggable="false" src="images/hero.jpg" alt="">
     </div>
-    <!-- header section strats -->
-    <header class="header_section">
+    <header class="header_section bg-black">
         <div class="container">
-            <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <nav class="navbar navbar-expand-lg custom_nav-container">
                 <a class="navbar-brand" href="index.html">
             <span>
               Mahlo
@@ -40,39 +38,35 @@
                 </a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class=""> </span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto ">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a draggable="false" class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a draggable="false" class="nav-link" href="menu.html">Produkte</a>
+                        </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a draggable="false" class="nav-link" href="about.html">Über uns</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="menu.html">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
+                        <div class="user_option">
+                            <a draggable="false" href="login.html" class="user_link">
+                                <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+                            </a>
+                            <a draggable="false" href="shopping_cart.html" class="user_link">
+                                <i class="fa-solid fa-shopping-cart fa-lg" aria-hidden="true"></i>
+                            </a>
+                        </div>
                     </ul>
-                    <div class="user_option">
-                        <a href="" class="user_link">
-                            <i class="fa fa-user" aria-hidden="true"></i>
-                        </a>
-                        <a href="" class="user_link">
-                            <i class="fa-solid fa-shopping-cart" aria-hidden="true"></i>
-                        </a>
-                        <form class="form-inline">
-                        </form>
-                    </div>
                 </div>
             </nav>
         </div>
     </header>
-    <!-- end header section -->
-    <!-- slider section -->
     <section class="slider_section ">
         <div id="customCarousel1" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" style="object-fit: fill">
@@ -90,8 +84,8 @@
                                         sunt repellat dolore, iste magni quos nihil ducimus libero ipsam.
                                     </p>
                                     <div class="btn-box">
-                                        <a href="#" class="btn1">
-                                            Order Now
+                                        <a draggable="false" href="about.html" class="btn1">
+                                            Mehr lesen
                                         </a>
                                     </div>
                                 </div>
@@ -113,8 +107,8 @@
                                         vulputate sit amet felis sit amet iaculis.
                                     </p>
                                     <div class="btn-box">
-                                        <a href="#" class="btn1">
-                                            Explore Menu
+                                        <a draggable="false" href="about.html" class="btn1">
+                                            Mehr lesen
                                         </a>
                                     </div>
                                 </div>
@@ -136,8 +130,8 @@
                                         veritatis et quasi architecto beatae vitae dicta sunt explicabo.
                                     </p>
                                     <div class="btn-box">
-                                        <a href="#" class="btn1">
-                                            Reserve Now
+                                        <a draggable="false" href="about.html" class="btn1">
+                                            Mehr lesen
                                         </a>
                                     </div>
                                 </div>
@@ -154,11 +148,13 @@
                         <li data-target="#customCarousel1" data-slide-to="2"></li>
                     </ol>
                 </div>
-                <a class="carousel-control-prev" href="#customCarousel1" role="button" data-slide="prev">
+                <a draggable="false" class="carousel-control-prev" href="#customCarousel1" role="button"
+                   data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#customCarousel1" role="button" data-slide="next">
+                <a draggable="false" class="carousel-control-next" href="#customCarousel1" role="button"
+                   data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a>
@@ -166,13 +162,11 @@
         </div>
     </section>
 </div>
-
 </br>
 </br>
 
 
-<!-- food section -->
-
+<!-- Essen -->
 <section class="food_section layout_padding-bottom">
     <div class="container">
         <div class="heading_container heading_center">
@@ -183,22 +177,22 @@
 
         <ul class="filters_menu">
             <li class="active" data-filter="*">Alles</li>
-            <li data-filter=".burger">Mittagessen</li>
-            <li data-filter=".pizza">Brotzeit</li>
-            <li data-filter=".pasta">Getränke</li>
+            <li data-filter=".lunch">Mittagessen</li>
+            <li data-filter=".breakfast">Brotzeit</li>
+            <li data-filter=".beverage">Getränke</li>
         </ul>
 
         <div class="filters-content">
             <div class="row grid">
-                <div class="col-sm-6 col-lg-4 all pizza">
+                <div class="col-sm-6 col-lg-4 all pizza"><!--Hier die Klassen anpassen um die Filter zu aktivieren-->
                     <div class="box">
                         <div>
                             <div class="img-box">
-                                <img src="images/f1.png" alt="">
+                                <img draggable="false" src="images/f1.png" alt="">
                             </div>
                             <div class="detail-box">
                                 <h5>
-                                    Delicious Pizza
+                                    Delicious
                                 </h5>
                                 <p>
                                     Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
@@ -208,7 +202,7 @@
                                     <h6>
                                         20€
                                     </h6>
-                                    <a href="#" class="text-white">
+                                    <a href="#" class="text-white" draggable="false">
                                         <i class="fa-solid fa-shopping-cart" aria-hidden="true"></i>
                                     </a>
                                 </div>
@@ -220,7 +214,7 @@
                     <div class="box">
                         <div>
                             <div class="img-box">
-                                <img src="images/f2.png" alt="">
+                                <img draggable="false" src="images/f2.png" alt="">
                             </div>
                             <div class="detail-box">
                                 <h5>
@@ -234,7 +228,7 @@
                                     <h6>
                                         15€
                                     </h6>
-                                    <a href="#" class="text-white">
+                                    <a href="#" class="text-white" draggable="false">
                                         <i class="fa-solid fa-shopping-cart" aria-hidden="true"></i>
                                     </a>
                                 </div>
@@ -246,7 +240,7 @@
                     <div class="box">
                         <div>
                             <div class="img-box">
-                                <img src="images/f3.png" alt="">
+                                <img draggable="false" src="images/f3.png" alt="">
                             </div>
                             <div class="detail-box">
                                 <h5>
@@ -260,7 +254,7 @@
                                     <h6>
                                         17€
                                     </h6>
-                                    <a href="#" class="text-white">
+                                    <a href="#" class="text-white" draggable="false">
                                         <i class="fa-solid fa-shopping-cart" aria-hidden="true"></i>
                                     </a>
                                 </div>
@@ -272,7 +266,7 @@
                     <div class="box">
                         <div>
                             <div class="img-box">
-                                <img src="images/f4.png" alt="">
+                                <img draggable="false" src="images/f4.png" alt="">
                             </div>
                             <div class="detail-box">
                                 <h5>
@@ -286,7 +280,7 @@
                                     <h6>
                                         18€
                                     </h6>
-                                    <a href="#" class="text-white">
+                                    <a href="#" class="text-white" draggable="false">
                                         <i class="fa-solid fa-shopping-cart" aria-hidden="true"></i>
                                     </a>
                                 </div>
@@ -298,7 +292,7 @@
                     <div class="box">
                         <div>
                             <div class="img-box">
-                                <img src="images/f5.png" alt="">
+                                <img draggable="false" src="images/f5.png" alt="">
                             </div>
                             <div class="detail-box">
                                 <h5>
@@ -312,7 +306,7 @@
                                     <h6>
                                         10€
                                     </h6>
-                                    <a href="#" class="text-white">
+                                    <a href="#" class="text-white" draggable="false">
                                         <i class="fa-solid fa-shopping-cart" aria-hidden="true"></i>
                                     </a>
                                 </div>
@@ -324,7 +318,7 @@
                     <div class="box">
                         <div>
                             <div class="img-box">
-                                <img src="images/f6.png" alt="">
+                                <img draggable="false" src="images/f6.png" alt="">
                             </div>
                             <div class="detail-box">
                                 <h5>
@@ -338,7 +332,7 @@
                                     <h6>
                                         15€
                                     </h6>
-                                    <a href="#" class="text-white">
+                                    <a href="#" class="text-white" draggable="false">
                                         <i class="fa-solid fa-shopping-cart" aria-hidden="true"></i>
                                     </a>
                                 </div>
@@ -350,7 +344,7 @@
                     <div class="box">
                         <div>
                             <div class="img-box">
-                                <img src="images/f7.png" alt="">
+                                <img draggable="false" src="images/f7.png" alt="">
                             </div>
                             <div class="detail-box">
                                 <h5>
@@ -364,7 +358,7 @@
                                     <h6>
                                         12€
                                     </h6>
-                                    <a href="#" class="text-white">
+                                    <a href="#" class="text-white" draggable="false">
                                         <i class="fa-solid fa-shopping-cart" aria-hidden="true"></i>
                                     </a>
                                 </div>
@@ -376,7 +370,7 @@
                     <div class="box">
                         <div>
                             <div class="img-box">
-                                <img src="images/f8.png" alt="">
+                                <img draggable="false" src="images/f8.png" alt="">
                             </div>
                             <div class="detail-box">
                                 <h5>
@@ -390,7 +384,7 @@
                                     <h6>
                                         14€
                                     </h6>
-                                    <a href="#" class="text-white">
+                                    <a href="#" class="text-white" draggable="false">
                                         <i class="fa-solid fa-shopping-cart" aria-hidden="true"></i>
                                     </a>
                                 </div>
@@ -402,7 +396,7 @@
                     <div class="box">
                         <div>
                             <div class="img-box">
-                                <img src="images/f9.png" alt="">
+                                <img draggable="false" src="images/f9.png" alt="">
                             </div>
                             <div class="detail-box">
                                 <h5>
@@ -416,7 +410,7 @@
                                     <h6>
                                         10€
                                     </h6>
-                                    <a href="#" class="text-white">
+                                    <a href="#" class="text-white" draggable="false">
                                         <i class="fa-solid fa-shopping-cart" aria-hidden="true"></i>
                                     </a>
                                 </div>
@@ -433,11 +427,9 @@
         </div>
     </div>
 </section>
+<!-- Essen Ende -->
 
-<!-- end food section -->
-
-<!-- about section -->
-
+<!-- Über uns -->
 <section class="about_section layout_padding">
     <div class="container  ">
 
@@ -451,7 +443,7 @@
                 <div class="detail-box">
                     <div class="heading_container">
                         <h2>
-                            We Are Mahlo's Kantine
+                            Wir sind Mahlo's Kantine
                         </h2>
                     </div>
                     <p>
@@ -461,56 +453,45 @@
                         If you
                         are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing
                         hidden in
-                        the middle of text. All
+                        the middle of text.
                     </p>
-                    <a href="">
-                        Read More
+                    <a draggable="false" href="about.html">
+                        Mehr darüber lesen
                     </a>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- end about section -->
+<!-- Über Uns Ende -->
 
-<!-- book section -->
+<!-- Vorschläge -->
 <section class="book_section layout_padding">
     <div class="container">
         <div class="heading_container">
             <h2>
-                Vorschlag machen
+                Vorschlag erstellen
             </h2>
         </div>
         <div class="row">
             <div class="col-md-6">
                 <div class="form_container">
                     <form action="">
-                        <div>
-                            <input type="text" class="form-control" placeholder="Name"/>
-                        </div>
-                        <div>
-                            <input type="text" class="form-control" placeholder="Telefon"/>
-                        </div>
-                        <div>
-                            <input type="email" class="form-control" placeholder="Email"/>
-                        </div>
-                        <div class="btn_box">
-                            <button>
-                                Vorschlag absenden
-                            </button>
-                        </div>
+                        <input type="email" class="form-control" placeholder="Email"/>
+                        <textarea class="form-control" placeholder="Vorschlag einfügen"></textarea>
+                        <button class="btn_box">Vorschlag absenden</button>
                     </form>
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="map_container ">
+                <div class="map_container">
                     <div id="googleMap"></div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- end book section -->
+<!-- Vorschläge Ende -->
 
 <!-- footer section -->
 <footer class="footer_section">
@@ -522,15 +503,15 @@
                         Kontakt
                     </h4>
                     <div class="contact_link_box">
-                        <a href="">
+                        <a target="_blank" draggable="false" href="https://maps.app.goo.gl/VpUUqCL98Cg5eh3w7">
                             <i class="fa fa-map-marker" aria-hidden="true"></i>
                             <span>Saal a.d. Donau</span>
                         </a>
-                        <a href="">
+                        <a target="_blank" draggable="false" href="tel: +499441601">
                             <i class="fa fa-phone" aria-hidden="true"></i>
                             <span>Call +01 1234567890</span>
                         </a>
-                        <a href="">
+                        <a target="_blank" draggable="false" href="mailto: info@mahlo.com">
                             <i class="fa fa-envelope" aria-hidden="true"></i>
                             <span>demo@gmail.com</span>
                         </a>
@@ -539,25 +520,25 @@
             </div>
             <div class="col-md-4 footer-col">
                 <div class="footer_detail">
-                    <a href="" class="footer-logo">
+                    <a draggable="false" target="_blank" href="https://mahlo.com" class="footer-logo">
                         Mahlo </a>
                     <p>
                         Yada yada yada yada yada yada
                     </p>
                     <div class="footer_social">
-                        <a target="_blank" href="https://www.facebook.com/MahloGmbh">
+                        <a draggable="false" target="_blank" href="https://www.facebook.com/MahloGmbh">
                             <i class="fa-brands fa-facebook" aria-hidden="true"></i>
                         </a>
-                        <a target="_blank" href="https://www.youtube.com/c/mahlogmbh">
+                        <a draggable="false" target="_blank" href="https://www.youtube.com/c/mahlogmbh">
                             <i class="fa-brands fa-youtube" aria-hidden="true"></i>
                         </a>
-                        <a target="_blank" href="https://www.xing.com/pages/mahlogmbh-cokg">
+                        <a draggable="false" target="_blank" href="https://www.xing.com/pages/mahlogmbh-cokg">
                             <i class="fa-brands fa-xing" aria-hidden="true"></i>
                         </a>
-                        <a target="_blank" href="https://www.linkedin.com/company/mahlo/">
+                        <a draggable="false" target="_blank" href="https://www.linkedin.com/company/mahlo/">
                             <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                         </a>
-                        <a target="_blank" href="https://www.instagram.com/mahlo_germany/">
+                        <a draggable="false" target="_blank" href="https://www.instagram.com/mahlo_germany/">
                             <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                         </a>
                         <a target="_blank" href="https://www.tiktok.com/@mahlo_germany">
@@ -582,8 +563,6 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
         <div class="footer-info">
             <p>
@@ -597,8 +576,7 @@
 <!-- jQery -->
 <script src="js/jquery-3.4.1.min.js"></script>
 <!-- popper js -->
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-</script>
+<script src="https://unpkg.com/@popperjs/core@2"></script>
 <!-- bootstrap js -->
 <script src="js/bootstrap.js"></script>
 <!-- isotope js: Zum Filtern der Produkte -->
@@ -611,5 +589,4 @@
 <script src="https://kit.fontawesome.com/eae22d6521.js" crossorigin="anonymous"></script>
 
 </body>
-
 </html>

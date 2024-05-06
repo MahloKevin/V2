@@ -49,7 +49,7 @@
                     <li class="nav-item">
                         <a draggable="false" class="nav-link" href="menu.html">Produkte</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a draggable="false" class="nav-link" href="about.html">Über uns</a>
                     </li>
                     <div class="user_option">
@@ -69,41 +69,43 @@
 
 <!-- about section -->
 <section class="about_section layout_padding bg-dark">
-    <div class="container  ">
-
-        <div class="row">
-            <div class="col-md-6 ">
-                <div class="img-box">
-                    <img draggable="false" src="images/about-img.png" alt="">
-                </div>
-            </div>
+    <div class="container">
+        <div class="row justify-content-center">
             <div class="col-md-6">
-                <div class="detail-box">
-                    <div class="heading_container">
-                        <h2>
-                            Wir sind die Mahlo Kantine
-                        </h2>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
-                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-                        ipsum dolor sit amet.
-                    </p>
+                <div class="login_form">
+                    <h2 class="text-center h2">Login</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="user">E-mail</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                                </div>
+                                <input type="text" class="form-control" id="user" placeholder="max.mustermann@mahlo.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Passwort</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i id="togglePassword" class="fa-solid fa-lock"></i></span>
+                                </div>
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Passwort123" required>
+                            </div>
+                        </div>
+                        <div class="mb-5">
+                            <button class="button btn btn-primary btn-block">Einloggen</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section id="mitteilung">
-
-</section>
 
 <!-- end about section -->
+
 
 <!-- footer section -->
 <footer class="footer_section">
