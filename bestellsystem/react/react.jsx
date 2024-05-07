@@ -1,4 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from "react-dom";
 
-ReactDOM.render(<h1>Hello World!</h1>, document.getElementById('displayYear'));
+import Header from "./components/Header";
+
+ReactDOM.render(<Header />, document.getElementById("header"));
