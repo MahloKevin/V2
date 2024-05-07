@@ -1027,3 +1027,7 @@ a:focus {
 .footer_section .footer-info p a {
   color: inherit;
 }
+
+.number{
+  width: 50px;
+}

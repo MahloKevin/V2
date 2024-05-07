@@ -25,7 +25,6 @@
 </head>
 
 <body class="sub_page">
-
 <!-- header section strats -->
 <header class="header_section bg-black">
     <div class="container">
@@ -58,7 +57,7 @@
                         </a>
                     </li>
                     <li class="nav-item active">
-                        <a draggable="false" class="nav-link" href="login.html">
+                        <a draggable="false" class="nav-link active" href="shopping_cart.html">
                             <i class="fa-solid fa-shopping-cart fa-lg" aria-hidden="true"></i>
                         </a>
                     </li>
@@ -67,43 +66,83 @@
         </nav>
     </div>
 </header>
-<!-- end header section -->
+<br>
+<br>
 
 <!-- about section -->
-<section class="about_section layout_padding bg-dark">
-    <div class="container  ">
-
+<section class="food_section layout_padding-bottom">
+    <div class="container">
+        <div class="heading_container heading_center">
+            <h2>
+                Warenkorb
+            </h2>
+        </div>
         <div class="row">
-            <div class="col-md-6 ">
-                <div class="img-box">
-                    <img draggable="false" src="images/about-img.png" alt="">
+            <div class="col-12">
+                <div class="box">
+                    <div>
+                        <div class="img-box">
+                            <img draggable="false" src="images/f1.png" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                Delicious
+                            </h5>
+                            <p>
+                                Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+                                voluptatem repellendus sed eaque
+                            </p>
+                            <div class="options">
+                                <h6>
+                                    20€
+                                </h6>
+                                <div class="quantity">
+                                    <input type="button" value="-" class="minus" onclick="subtract('1number');">
+                                    <input class="number" type="number" value="1" step="1" min="0" max="100" id="1number">
+                                    <input type="button" value="+" class="plus" onclick="add('1number');">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="detail-box">
-                    <div class="heading_container">
-                        <h2>
-                            Wir sind die Mahlo Kantine
-                        </h2>
+            <div class="col-12">
+                <div class="box">
+                    <div>
+                        <div class="img-box">
+                            <img draggable="false" src="images/f1.png" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                Delicious
+                            </h5>
+                            <p>
+                                Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+                                voluptatem repellendus sed eaque
+                            </p>
+                            <div class="options">
+                                <h6>
+                                    20€
+                                </h6>
+                                <div class="quantity">
+                                    <input type="button" value="-" class="minus" onclick="subtract('2number');">
+                                    <input class="number" type="number" value="1" step="1" min="0" max="100" id="2number">
+                                    <input type="button" value="+" class="plus" onclick="add('2number');">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
-                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-                        ipsum dolor sit amet.
-                    </p>
                 </div>
             </div>
         </div>
     </div>
+    <div class="btn-box">
+        <div class="mb-5">
+            <button class="button btn btn-primary btn-block">Bestellen</button>
+        </div>
+    </div>
 </section>
 
-<section id="mitteilung">
-
-</section>
 
 <!-- end about section -->
 
@@ -199,8 +238,10 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
 <!-- Font Awesome -->
 <script src="https://kit.fontawesome.com/eae22d6521.js" crossorigin="anonymous"></script>
-<!-- custom js -->
-<script src="js/custom.js"></script>
+<!-- listener js -->
+<script src="js/listener.js"></script>
+<!-- loading js -->
+<script src="js/load.js"></script>
 <!-- isotope js -->
 <script src="js/isotope.js"></script>
 
