@@ -1,6 +1,7 @@
-import * as React from 'react';
-import * as ReactDOM from "react-dom";
+import { createRoot } from 'react-dom/client';
+import Header from "./components/Header.jsx";
 
-import Header from "./components/Header";
 
-ReactDOM.render(<Header />, document.getElementById("header"));
+const domNode = document.getElementById('navigation');
+const root = createRoot(domNode);
+root.render(<Header />);
