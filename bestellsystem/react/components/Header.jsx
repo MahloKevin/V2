@@ -1,4 +1,3 @@
-import React from 'react';
 
 function Header() {
     <header className="header_section bg-black">
