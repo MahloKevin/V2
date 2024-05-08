@@ -1,6 +1,5 @@
-
 function Header() {
-    <header className="header_section bg-black">
+    return <header className="header_section bg-black">
         <div className="container">
             <nav className="navbar navbar-expand-lg custom_nav-container">
                 <a className="navbar-brand" href="index.html">
@@ -25,12 +24,12 @@ function Header() {
                         <li className="nav-item">
                             <a draggable="false" className="nav-link" href="about.html">Über uns</a>
                         </li>
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <a draggable="false" className="nav-link" href="login.html">
                                 <i className="fa fa-user fa-lg" aria-hidden="true"></i>
                             </a>
                         </li>
-                        <li className="nav-item active">
+                        <li className="nav-item">
                             <a draggable="false" className="nav-link active" href="shopping_cart.html">
                                 <i className="fa-solid fa-shopping-cart fa-lg" aria-hidden="true"></i>
                             </a>
