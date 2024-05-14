@@ -3,14 +3,13 @@ function Header() {
         <div className="container">
             <nav className="navbar navbar-expand-lg custom_nav-container">
                 <a className="navbar-brand" href="index.html">
-            <span>
-              Mahlo
-            </span>
+                    <span>Mahlo</span>
                 </a>
 
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span> </span>
+                    <span className="navbar-toggler-icon"></span>
                 </button>
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -30,7 +29,7 @@ function Header() {
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a draggable="false" className="nav-link active" href="shopping_cart.html">
+                            <a draggable="false" className="nav-link" href="shopping_cart.html">
                                 <i className="fa-solid fa-shopping-cart fa-lg" aria-hidden="true"></i>
                             </a>
                         </li>
