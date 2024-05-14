@@ -1,7 +1,6 @@
 //Funktion um Passwort einzusehen
 document.getElementById("togglePassword").addEventListener("click", togglePassword);
 
-
 function togglePassword() {
     var passwordField = document.getElementById('password');
     var lockIcon = document.getElementById('togglePassword');
