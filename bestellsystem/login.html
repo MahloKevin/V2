@@ -26,42 +26,39 @@
 <body class="sub_page">
 <div id="header"></div>
 <!-- about section -->
-<section class="about_section layout_padding bg-dark">
+<section class="about_section layout_padding bg-dark text-light">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <div class="login_form">
-                    <h2 class="text-center h2">Login</h2>
-                    <form>
-                        <div class="form-group">
-                            <label for="user">E-mail</label>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
+                <div class="card bg-secondary shadow">
+                    <div class="card-body">
+                        <h2 class="text-center mb-4">Login</h2>
+                        <form>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-mail</label>
+                                <div class="input-group">
                                     <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                                    <input type="email" class="form-control" id="email"
+                                           placeholder="max.mustermann@mahlo.com" required>
                                 </div>
-                                <input type="email" class="form-control" id="user"
-                                       placeholder="max.mustermann@mahlo.com" required>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Passwort</label>
-                            <div class="input-group">
-                                <div class="input-group-prepend">
+                            <div class="mb-4">
+                                <label for="password" class="form-label">Passwort</label>
+                                <div class="input-group">
                                     <span class="input-group-text"><i id="togglePassword" class="fa-solid fa-lock"></i></span>
+                                    <input type="password" class="form-control" id="password" name="password"
+                                           placeholder="Passwort123" required>
                                 </div>
-                                <input type="password" class="form-control" id="password" name="password"
-                                       placeholder="Passwort123" required>
                             </div>
-                        </div>
-                        <div class="mb-5">
-                            <button class="button btn btn-primary btn-block">Einloggen</button>
-                        </div>
-                    </form>
+                            <button type="submit" class="button btn-primary w-100">Einloggen</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 <!-- end about section -->
 <div id="footer"></div>
 
