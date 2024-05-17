@@ -7,12 +7,11 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error("Das Element mit der ID 'togglePassword' wurde nicht gefunden.");
     }
 
-    // Profilbild-Änderung Event-Listener
-    let profilePicInput = document.getElementById('profilePic');
-    if (profilePicInput) {
-        profilePicInput.addEventListener('change', handleProfilePicChange);
+    let loginForm = document.getElementById("loginForm");
+    if (loginForm) {
+        loginForm.addEventListener("submit", login);
     } else {
-        console.error("Das Element mit der ID 'profilePic' wurde nicht gefunden.");
+        console.error("Das Element mit der ID 'loginForm' wurde nicht gefunden.");
     }
 });
 
@@ -32,24 +31,6 @@ function togglePassword() {
     }
 }
 
-function handleProfilePicChange(event) {
-    const file = event.target.files[0];
-
-    // Prüfe, ob es eine Bilddatei ist
-    if (file && file.type.startsWith('image/')) {
-        const reader = new FileReader();
-        reader.onload = function (e) {
-            document.getElementById('profileImage').src = e.target.result;
-        };
-        reader.readAsDataURL(file);
-
-        // Sende die Bilddatei an das Backend
-        uploadImage(file);
-    } else {
-        alert('Bitte wählen Sie eine Bilddatei aus.');
-    }
-}
-
 function uploadImage(file) {
     const formData = new FormData();
     formData.append('file', file);
@@ -61,14 +42,6 @@ function uploadImage(file) {
         .then(response => response.json())
         .then(data => console.log(data))
         .catch(error => console.error('Fehler:', error));
-}
-
-function login(){
-    let email = document.getElementById("email").value;
-    let password = document.getElementById("password").value;
-
-
-
 }
 
 function add(id) {
