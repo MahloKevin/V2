@@ -1,9 +1,9 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 
 // Card-Komponente
-const FoodCard = ({item}) => {
+const FoodCard = ({ item }) => {
     return (
-        <div id={item.ID} className={item.category + " col-sm-6 col-lg-4 all"}>
+        <div id={item.id} className={item.category + " col-sm-6 col-lg-4 all"}>
             <div className="box">
                 <div>
                     <div className="img-box">
@@ -14,7 +14,7 @@ const FoodCard = ({item}) => {
                         <p>{item.description}</p>
                         <div className="options">
                             <h6>€{item.price}</h6>
-                            <h6>Noch {item.amount} vorhanden</h6>
+                            {item.amount && <h6>Noch {item.amount} vorhanden</h6>}
                             <a href="" className="text-white" draggable="false">
                                 <i className="fa-solid fa-shopping-cart"></i>
                             </a>
@@ -59,7 +59,7 @@ const FoodSection = () => {
                 <div className="filters-content">
                     <div className="row grid">
                         {items.map(item => (
-                            <FoodCard key={item.id} item={item}/>
+                            <FoodCard key={item.id} item={item} />
                         ))}
                     </div>
                 </div>
