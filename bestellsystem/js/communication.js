@@ -18,12 +18,17 @@ async function login(event) {
     //console.log(ip);
 
     try {
-        const response = await fetch("http://192.168.120.27:42069/login/" + email + ";" + password, {});
+        const response = await fetch("http://10.81.234.133:42069/login/" + email + ";" + password, {});
         console.log(response)
         if (response.ok) {
             const data = await response.text();
-            document.cookie = "loginToken=" + data + "; path=/; secure";
-            alert("Login erfolgreich!");
+            if(data == "Anmeldung nicht möglich"){
+                alert("Die angegebenen Daten sind nicht korrekt")
+            } else {
+                document.cookie = "loginToken=" + data + "; path=/; secure";
+                window.location.href = "profile.html";
+            }
+
         } else {
             alert("Login fehlgeschlagen: " + response.statusText);
         }
