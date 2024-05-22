@@ -38,7 +38,15 @@ async function login(event) {
     }
 }
 
-function handleProfilePicChange(event) {
+function addToShoppingCart(productID){
+
+
+}
+
+
+
+
+/*function handleProfilePicChange(event) {
     const file = event.target.files[0];
 
     // Prüfe, ob es eine Bilddatei ist
@@ -56,7 +64,7 @@ function handleProfilePicChange(event) {
     }
 }
 
-/*function getIPAddressFromFile() {
+function getIPAddressFromFile() {
     try {
         // Read the file content
         const json = fs.readFileSync("important/ip.json", 'utf8');

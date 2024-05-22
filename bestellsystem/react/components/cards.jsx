@@ -11,7 +11,7 @@ const FoodCard = ({ item }) => {
                     </div>
                     <div className="detail-box">
                         <h5>{item.name}</h5>
-                        <p>{item.description}</p>
+                        <p>Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque</p>
                         <div className="options">
                             <h6>€{item.price}</h6>
                             {item.amount && <h6>Noch {item.amount} vorhanden</h6>}
