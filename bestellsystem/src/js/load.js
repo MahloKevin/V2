@@ -1,4 +1,4 @@
-//Spielt das aktuelle Jahr als Copyright ein
+//AKtuelles Jahr für Copyright einfügen
 getYear();
 
 //Fügt Google Maps auf der Startseite ein
@@ -40,4 +40,5 @@ function myMap() {
         console.error("Das Element mit der ID 'googleMap' konnte nicht gefunden werden.");
     }
 }
+
 

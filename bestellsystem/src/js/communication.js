@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function (){
+document.addEventListener('DOMContentLoaded', function () {
     // Profilbild-Änderung Event-Listener
     let profilePicInput = document.getElementById('profilePic');
     if (profilePicInput) {
@@ -18,14 +18,18 @@ async function login(event) {
     //console.log(ip);
 
     try {
-        const response = await fetch("http://10.81.234.133:42069/login/" + email + ";" + password, {});
+        const response = await fetch("http://192.168.100.11" + email + ";" + password, {});
         console.log(response)
         if (response.ok) {
             const data = await response.text();
-            if(data == "Anmeldung nicht möglich"){
+            if (data == "Anmeldung nicht möglich") {
                 alert("Die angegebenen Daten sind nicht korrekt")
             } else {
+                let expireDate = new Date();
+                //expireDate.setTime(expireDate.getTime() + (15 * 60 * 1000)); // 15 Minuten ab jetzt
+                //document.cookie = "loginToken=" + data + "; expires=" + expireDate.toUTCString() + "; path=/; secure";
                 document.cookie = "loginToken=" + data + "; path=/; secure";
+
                 window.location.href = "profile.html";
             }
 
@@ -38,15 +42,14 @@ async function login(event) {
     }
 }
 
-function addToShoppingCart(productID){
+/*
+function addToShoppingCart(productID) {
 
 
 }
 
 
-
-
-/*function handleProfilePicChange(event) {
+function handleProfilePicChange(event) {
     const file = event.target.files[0];
 
     // Prüfe, ob es eine Bilddatei ist

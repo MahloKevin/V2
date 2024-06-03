@@ -28,7 +28,7 @@ function Footer() {
                         <a draggable="false" target="_blank" href="https://mahlo.com" className="footer-logo">
                             Mahlo </a>
                         <p>
-                            Yada yada yada yada yada yada
+
                         </p>
                         <div className="footer_social">
                             <a draggable="false" target="_blank" href="https://www.facebook.com/MahloGmbh">

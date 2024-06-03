@@ -33,7 +33,7 @@ const FoodSection = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('http://10.81.234.133:42069/selectToJSON/products');
+                const response = await fetch('http://192.168.120.30:42069/selectToJSON/products');
                 const data = await response.json();
                 setItems(data);
             } catch (error) {
